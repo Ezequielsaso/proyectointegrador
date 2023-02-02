@@ -1,0 +1,76 @@
+@media (max-width: 1115.2px) {
+    .navbar-list {
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        border: 2px solid black;
+        border-top: 0px;
+        background-color: aqua;
+        border-radius: 0px 0px 15px 15px;
+        padding: 20px;
+        z-index: 2;
+        display: none;
+    }
+    .menu-label {
+        order: 2;
+        display: flex;
+        cursor: pointer;
+    }
+    .menu-label img {
+        width: 402px;
+    }
+
+    /* Mostramos Menu-Label */
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+        width: 40px;
+    }
+    label,
+    .menu-label {
+        margin-left: 29px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+}
+
+/* Modificacion Productos */
+@media (max-width: 1400px) {
+    .container-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-card2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Modificacion Contacto */
+@media (max-width: 1273px) {
+    #contactanos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 90%;
+        margin-left: 105px;
+    }
+}
+
+/* arreglar formulario de contacto ya que se rompe al 1030px */
+
+@media (max-width: 1030px) {
+    #contactanos {
+        width: 80%;
+    }
+}
