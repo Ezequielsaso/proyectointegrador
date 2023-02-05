@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  
+border: 2px solid black;
     list-style-type: none;
 }
 html {
@@ -234,7 +234,7 @@ strong {
 
 .container-card {
     display: flex;
-  
+
     gap: 30px;
 }
 .container-card2 {
@@ -250,7 +250,6 @@ strong {
     align-items: center;
     cursor: default;
     transition: all 1100ms ease;
-    
 }
 .producto {
     width: 100%;
@@ -278,7 +277,6 @@ strong {
     box-shadow: 1px 1px 4px;
 }
 .card {
-    
     width: 300px;
 }
 .card2 {
@@ -387,7 +385,7 @@ strong {
     display: flex;
     padding: 15px 280px;
     margin-top: 80px;
-    
+   
 }
 .container-contactanos {
     position: initial;
@@ -397,7 +395,7 @@ strong {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px;
+    padding: 60px ;
     background-image: url(/escritorio-oficina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
