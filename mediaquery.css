@@ -65,6 +65,9 @@
         width: 90%;
         margin-left: 105px;
     }
+    .formulario {
+        width: 50%;
+    }
 }
 
 /* arreglar formulario de contacto ya que se rompe al 1030px */
@@ -72,5 +75,88 @@
 @media (max-width: 1030px) {
     #contactanos {
         width: 80%;
+    }
+}
+
+@media (max-width: 890px) {
+    .container-contactanos {
+        width: 67%;
+    }
+}
+
+@media (max-width: 890px) {
+    .formulario {
+        width: 67%;
+    }
+}
+
+/* Arreglar Sobre Nosotros */
+
+@media (max-width: 1030px) {
+    .container-info2 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 50px 240px;
+    }
+}
+@media (max-width: 590px) {
+    #texto {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 730px) {
+    #sobrenosotros {
+        font-size: 25px;
+        width: 100%;
+
+        padding: 100px;
+    }
+
+    #texto {
+        width: auto;
+    }
+}
+
+/* Poner en colum el footer */
+
+@media (max-width: 753px) {
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Arreglar Mobile 430px */
+
+@media (max-width: 520px) {
+    #contactanos {
+        width: 75%;
+    }
+}
+
+/* Achicar cards */
+@media (max-width: 540px) {
+    .formulario {
+        padding: 20px 1px;
+        margin-right: 90px;
+    }
+    .container-contactanos {
+        padding: 20px 1px;
+        margin-right: 90px;
+    }
+}
+
+/* Arreglar Carrito Pegado Al Titulo */
+@media (max-width: 417px) {
+    .navbar {
+        margin-left: 50px;
     }
 }

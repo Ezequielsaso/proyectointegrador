@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    border: 2px solid black;
+  
     list-style-type: none;
 }
 html {
@@ -34,7 +34,7 @@ a {
 }
 .navbar-list {
     display: flex;
-    gap: 50px;
+    gap: 37px;
     align-items: center;
     text-align: center;
     font: bold 90% monospace;
@@ -226,16 +226,15 @@ strong {
 #informacion {
     background: -webkit-linear-gradient(rgb(49, 29, 29), rgb(73, 28, 128));
     -webkit-background-clip: text;
-    margin-left: -40px;
-    margin-top: 30px;
-    margin-bottom: 70px;
+
+    padding: 30px 40px;
 }
 
 /* Cards para los beneficios */
 
 .container-card {
     display: flex;
-
+  
     gap: 30px;
 }
 .container-card2 {
@@ -251,7 +250,7 @@ strong {
     align-items: center;
     cursor: default;
     transition: all 1100ms ease;
-    width: 100%;
+    
 }
 .producto {
     width: 100%;
@@ -276,9 +275,11 @@ strong {
 }
 .card:hover {
     transform: translateY(-5%);
+    box-shadow: 1px 1px 4px;
 }
 .card {
-    width: 450px;
+    
+    width: 300px;
 }
 .card2 {
     width: 400px;
@@ -317,7 +318,7 @@ strong {
 }
 
 .boton-compra4 {
-    margin-top: 200px;
+    margin-top: 100px;
     box-shadow: 1px 2px 4px;
     border-radius: 10px;
     background-color: rgb(233, 224, 224);
@@ -325,13 +326,11 @@ strong {
     font-weight: 700;
     cursor: pointer;
     transition: all 400ms ease;
-    margin-top: 14px;
     text-shadow: 1px 2px 60px;
     align-items: center;
     justify-content: center;
     text-align: center;
     transition: all 400ms ease;
-    padding: 10px;
 }
 .boton-compra4:hover {
     background-color: rgb(85, 85, 188);
@@ -361,19 +360,16 @@ strong {
 .container-info2 {
     background-image: url(/about-us-page-1024x512.png);
     background-position: center center;
-    color: rgb(0, 3, 6);
+
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 40px 189px;
-    box-shadow: 1px 2px 5px;
+
     border: 3px solid rgb(255, 255, 255);
     align-items: center;
     margin-top: 50px;
     font-size: 40px;
     padding: 120px;
-    width: 70%;
-    margin-left: 200px;
 }
 
 #texto {
@@ -391,6 +387,7 @@ strong {
     display: flex;
     padding: 15px 280px;
     margin-top: 80px;
+    
 }
 .container-contactanos {
     position: initial;
@@ -404,7 +401,7 @@ strong {
     background-image: url(/escritorio-oficina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
+
     background-position: center center;
     line-height: 3.5em;
 }
@@ -470,11 +467,17 @@ strong {
 }
 
 .container-footer {
-    background-color: #3e3e3e;
+    background-image: linear-gradient(
+        45deg,
+        rgb(80, 72, 72),
+        rgb(112, 88, 88),
+        rgb(46, 46, 46)
+    );
     padding: 47px;
     margin-top: 120px;
     border-top: 3px solid black;
     width: 100%;
+    display: flex;
 
     justify-content: center;
     text-align: center;
@@ -496,6 +499,7 @@ strong {
     display: flex;
     gap: 30px;
     transition: all 500ms ease;
+    margin-bottom: 40px;
 }
 
 .sociales:hover {
@@ -511,4 +515,10 @@ strong {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+#copy {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(55, 49, 49);
 }
