@@ -1,18 +1,30 @@
 @media (max-width: 1115.2px) {
     .navbar-list {
         position: absolute;
-        top: 18%;
-        left: 5%;
-        right: 5%;
-        width: 90%;
+        align-items: flex-end;
+        top: 13.5%;
+        left: 50%;
+        right: 50%;
+        width: 50%;
         flex-direction: column;
-        border: 2px solid black;
+        border: 3px solid rgb(235, 198, 35);
+        box-shadow: 2px 5px 20px;
         border-top: 0px;
-        background-color: aqua;
+        background-image: url(/logo.jpg);
+        background-position: center center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 0px 0px 15px 15px;
         padding: 20px;
         z-index: 2;
         display: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .navbar-list {
+        color: rgb(115, 115, 115);
     }
     .menu-label {
         order: 2;
@@ -158,5 +170,8 @@
     #hero {
         display: flex;
         flex-direction: column;
+    }
+    .navbar-list {
+        padding: 2px;
     }
 }

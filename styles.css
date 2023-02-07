@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-border: 2px solid black;
+
     list-style-type: none;
 }
 html {
@@ -41,9 +41,16 @@ a {
     width: 100%;
     margin-right: 120px;
 }
+.bar {
+    transition: all 500ms ease;
+}
 
+.bar:hover {
+    transform: translateY(-7%);
+}
 .cart {
     width: 40px;
+    margin-right: 36px;
 
     transition: all 500ms ease;
 }
@@ -385,7 +392,6 @@ strong {
     display: flex;
     padding: 15px 280px;
     margin-top: 80px;
-   
 }
 .container-contactanos {
     position: initial;
@@ -395,7 +401,7 @@ strong {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px ;
+    padding: 60px;
     background-image: url(/escritorio-oficina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
