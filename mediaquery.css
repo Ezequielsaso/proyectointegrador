@@ -2,10 +2,11 @@
     .navbar-list {
         position: absolute;
         align-items: flex-end;
-        top: 7%;
+        top: -50%;
         left: 50%;
         right: 50%;
         width: 50%;
+        color: rgb(115, 115, 115);
         flex-direction: column;
         border: 3px solid rgb(235, 198, 35);
         box-shadow: 2px 5px 20px;
@@ -21,16 +22,88 @@
         display: none;
         font-weight: 600;
         font-size: 18px;
+        animation: moveDown 1s ease-in-out forwards;
     }
 
+    /* Animacion para Hamburguesa */
+    @keyframes moveDown {
+        from {
+            top: 10;
+        }
+        to {
+            top: 98px;
+        }
+    }
+
+    .menu-label {
+        order: 2;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        width: 402px;
+    }
+
+    /* Mostramos Menu-Label */
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+}
+
+@media (max-width: 1115.2px) {
     .navbar-list {
+        position: absolute;
+        align-items: flex-end;
+        top: -50%;
+        left: 50%;
+        right: 50%;
+        width: 50%;
         color: rgb(115, 115, 115);
+        flex-direction: column;
+        border: 3px solid rgb(235, 198, 35);
+        box-shadow: 2px 5px 20px;
+        border-top: 0px;
+        background-image: url(/logo.jpg);
+        background-position: center center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 0px 15px 15px;
+        padding: 20px;
+        z-index: 2;
+        display: none;
+        font-weight: 600;
+        font-size: 18px;
+        transition: 200ms;
+        animation: moveDown 1s ease-in-out forwards;
+    }
+
+    /* Animacion para Hamburguesa */
+    @keyframes moveDown {
+        from {
+            top: 10;
+        }
+        to {
+            top: 98px;
+        }
+    }
+    .checkbox:checked ~ .navbar-list {
+        top: 48px;
     }
     .menu-label {
         order: 2;
         display: flex;
         cursor: pointer;
     }
+
     .menu-label img {
         width: 402px;
     }
