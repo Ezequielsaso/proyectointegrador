@@ -122,10 +122,9 @@
 }
 
 /* Modificacion Productos */
-@media (max-width: 1400px) {
+@media (max-width: 976px) {
     .container-card {
-        display: flex;
-        flex-direction: column;
+        display: grid;
     }
 
     .container-card2 {
